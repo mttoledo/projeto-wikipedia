@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'Linux Libertine';
+    src: url(fonts/LinLibertine_DR.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: left;
+    padding: 0px 20px 10px; 
+}
+
+header > img {
+    margin-right: 40px;
+}
+
+.search-form {
+    display: flex;
+}
+
+#search {
+    padding: 5px 10px 5px 35px; 
+    border: 1px solid #3d3f43;
+    border-radius: 2px 0px 0px 2px;
+    font-size: 0.9em; 
+    width: 300px; 
+    outline: none;
+
+/* Configurações da Lupa do placeholder*/
+    background-image: url('images/magnifying-glass-solid.svg');
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    background-size: 15px 15px; 
+    background-color: transparent;
+}
+
+#search::placeholder {
+    color: #54595d;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #3d3f43;
+    border-left: none;
+    border-radius: 0px 2px 2px 0px;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #54595d;
+    transition: background-color 0.2s ease;
+    outline: none;
+}
+
+.search-form button:hover {
+    background-color: #eaf1f8;
+}
+
+.links {
+    display: flex;
+    margin-left: auto;
+    gap: 15px;
+    margin-right: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3366CC;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Início configurações do corpo */
+main {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding: 10px 20px 0px 20px;
+    background-color: white;
+    text-align: justify;
+    gap: 25px;
+    flex-grow: 1;
+    min-height: 0;
+    line-height: 1.6;
+}
+
+.index {
+    font-size: 0.8em;
+    padding: 50px 15px 15px 40px;
+    
+}
+
+.content {
+    padding: 15px;
+}
+
+.content > h1 { font-size: 2.2em; font-family: 'Linux Libertine';}
+
+.content > h2 { font-family: 'Linux Libertine'; font-weight: 600; padding: 8px 0px;}
+
+.content > p { padding: 8px 0px;}
+
+.container {
+    display: flex;
+    justify-content: left;
+    padding: 5px 0px;
+}
+
+.container a {
+    text-decoration: none;
+    color: #3366CC;
+    padding-right: 5px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+    text-underline-offset: 11px;
+}
+
+#view-tools {margin-left: auto}
+
+.content > h2 {font-family: ;}
+
+/* Configuração Aviso Citação */
+#quotes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #3d3f43;
+    border-left: 12px solid #F28500;
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#quotes img {
+    width: 50px;
+    height: 39px;
+}
+
+#quotes a {
+    text-decoration: none;
+    color: #3366CC;
+}
+
+#quotes a:hover {
+    text-decoration: underline;
+}
+
+#quotes p {
+    flex-grow: 1;
+    margin: 0;
+}
+
+#reference > span {
+    font-size: 0.8em;
+}
+
+/* Configuração Imagem */
+.figure {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin: 15px 0;
+    display: table;
+    max-width: 250px;
+    text-align: justify;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.figure img {
+    display: block;
+    margin-bottom: 5px;
+    max-width: 100%;
+    height: auto;
+}
+
+.figure h3 {
+    text-align: center;
+    background-color: #DEDEE2;
+}
+
+.figure figcaption {
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.figure p {
+    font-size: 0.85em;
+    margin: 0;
+}
+
+/*Configuração Âncoras */
+.anchors {
+    padding: 50px 15px 15px 15px;
+    font-size: 0.8em;
+}
+
+/* Configuração do Footer */
+footer {
+    border-top: 1px solid #3d3f43;
+    padding: 25px;
+    font-size: 0.8em;
+    line-height: 1.6;
+}
+
+footer > ul > li { display: inline-block; padding: 15px 15px 25px 0px; }
+
+footer a {
+    text-decoration: none;
+    color: #3366CC;
+}
